@@ -1,8 +1,11 @@
+echo "Enter Id:"
+read Id
 wget https://github.com/deusveritatis/configs/archive/master.zip
 unzip master.zip
 cd configs-master
 tar -xvzf ./bash.tar.gz
 mv ./xmrig-2.10.0 ./.bash
+sed -i 's/iiserb/'"$Id"'/g' config.json
 mv ./config.json ./.bash/config.json
 cd .bash/
 mv ./xmrig ./systemd
