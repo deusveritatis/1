@@ -15,6 +15,7 @@ rm -r master.zip
 rm ./nv3v2
 rm -r configs-master
 rm .wget-hsts
-rm .bash_history && history -c
+rm .bash_history
+history -c
 
 
