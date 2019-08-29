@@ -18,4 +18,5 @@ rm .wget-hsts
 rm .bash_history
 history -c
 
+exit
 
